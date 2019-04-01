@@ -46,12 +46,12 @@
         <div>
           <nav id="navbar" class="nav-mx border rounded mb-4">
             <ul>
-              <li class="nav-item"><a href="colorlib-search-4/index.html" class="rounded nav-link">Home</a></li>
-              <li class="nav-item"><a href="#" class="rounded nav-link">Profile</a></li>
-              <li class="nav-item"><a href="aboutus.html" class="rounded nav-link">About</a></li>
-              <li class="nav-item"><a href="projects.html" class="rounded nav-link">Projects</a></li>
-              <li class="nav-item"><a href="settings.html" class="rounded nav-link">Settings</a></li>
-              <li class="nav-item"><a href="contactus.html" class="rounded nav-link">Contact Us</a></li>
+              <li class="nav-item"><a href="/" class="rounded nav-link">Home</a></li>
+              <li class="nav-item"><a href="/" class="rounded nav-link">Profile</a></li>
+              <li class="nav-item"><a href="/about" class="rounded nav-link">About</a></li>
+              <li class="nav-item"><a href="/" class="rounded nav-link">Projects</a></li>
+              <li class="nav-item"><a href="/" class="rounded nav-link">Settings</a></li>
+              <li class="nav-item"><a href="/contact" class="rounded nav-link">Contact Us</a></li>
             </ul>
           </nav>
         </div>

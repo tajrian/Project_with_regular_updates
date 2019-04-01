@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Search Result-teacher</title>
+  <title>Search Result-Student</title>
     <link rel="stylesheet" href="{{asset('anik/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
     <script src="{{asset('anik/js/bootstrap.js')}}"></script>
@@ -27,7 +27,7 @@
 
     <header class="main-header">
     <div>
-      <a href="colorlib-search-4/index.html"><img src="{{asset('anik/logo.svg')}}" alt="Logo here">
+      <a href="/"><img src="{{asset('anik/logo.svg')}}" alt="Logo here">
 
       
       <a href="/register/teacher"><button class="btn default" style="color: #fff;">Sign up Teacher</button></a>
@@ -41,7 +41,7 @@
      
 
   <!--navigation bar-->
-<div>
+        <div>
           <nav id="navbar" class="nav-mx border rounded mb-4">
             <ul>
               <li class="nav-item"><a href="/" class="rounded nav-link">Home</a></li>
@@ -54,6 +54,68 @@
           </nav>
         </div>
         <div class="clearfix"></div>
+
+        <div class="ridge mb-4 mt-4" style="border-style: ridge; margin-left: 0; width: 100%; border-radius: 10px; height: 257px;">
+
+          <img src="{{asset('anik/images/picture.jpg')}}" style="height: 250px; width: 250px; float: left; margin-right: 13px; border:solid white 1px; ">
+          <h3 style="color: #fff; padding: 10px;">Welcome to PTM</h3>
+
+          <p style="padding: 10px; color: #fff; font-size: 20px;">
+             It is the platform you're looking for sharing your ideas and make them implemented! 
+             You can submit your project/thesis in PTM (Project & Thesis Management) easily. 
+             You can choose a supervisor and submit a project/thesis under that supervisor. 
+
+             Supervisor can also call for project/thesis in our page. It is easy to interact between Supervisor and Student by our page.
+
+             We hope you enjoy our page as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+          </p>
+
+
+         </div>
+
+
+         <div class="ridge mb-4 mt-4" style="border-style: ridge; margin-left: 0; width: 100%; border-radius: 10px; height: 257px;">
+
+          <img src="{{asset('anik/images/31.jpg')}}" style="height: 250px; width: 250px; float: right; margin-left: 13px; border:solid white 1px; ">
+          <h3 style="color: #fff; padding: 10px; float: right;">Our Mission</h3>
+
+          <p style="padding: 10px; color: #fff; font-size: 20px; text-align: center; float: center; padding-top: 115px;">
+
+              To help bring creative projects to life.
+
+          </p>
+
+
+         </div>
+
+
+         <div class="ridge mb-4 mt-4" style="border-style: ridge; margin-left: 0; width: 100%; border-radius: 10px; height: 257px;">
+
+
+          
+          <img src="{{asset('anik/images/diff.jpg')}}" style="height: 250px; width: 250px; float: left; margin-right: 13px; border:solid white 1px; ">
+          <div class="mr-2">
+
+          <h3 style="color: #fff; padding: 10px;" class="text-align">Why We Different</h3>
+
+            
+              <ul style="color: #fff; font-size: 20px; padding-top: 10px;">
+                <li style="padding: 5px;"> > Maintaining and cultivating relationships with Supervisors and Students.</li>
+                <li style="padding: 5px;"> > Our design approach is easy to use, very few formalities indeed.</li>
+                <li style="padding: 5px;"> > It can give you opportunity to share your ideas with your very own University's professors and fellow students.</li>
+                <li style="padding: 5px;"> > You can call for a idea and implement a project in a very straight foward way.</li>
+                
+              </ul>
+
+            </div>
+
+          
+
+        
+
+
+         </div>
+
 
 
 
@@ -156,46 +218,7 @@
 
 
 
-<div class="container">
-        
-        <table class="table table-striped table-bordered" >
-            
-            <thead style="color: #EEE;" >
-                <tr> 
-                    <td>Name</td>
-                    <td>Institute</td>
-                    <td>Dept</td>
-                    <td>full profile</td>
-                </tr>
-            </thead>
 
-           <tbody style="color: #EEE;">
-               @foreach($teacher as $teacher)
-               
-               @php
-               $id=$teacher->name
-               @endphp
-               <tr>
-                    <td>{{ $teacher->name }}</td>
-                    <td>{{ $teacher->institute }}</td>
-                    <td>{{ $teacher->dept }}</td>
-                    <td>
-                    <form action="/pdt" method="POST" role="search">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="project_id" id="project_id" value="<?php echo htmlspecialchars($id); ?>" />
-                    <button type="submit">Click Here</button>
-                    </form>
-                    </td>
-
-               </tr>
-               @endforeach
-            </tbody>
-          </table>
-</div>
-
-
-
-</div>
   
   
 </body>

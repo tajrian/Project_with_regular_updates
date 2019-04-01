@@ -11,8 +11,7 @@
 
                     <div class="card-body" >
                         Successfully submitted,
-                        {{Auth::guard('student')->user()->name}}!
-
+                        {{Auth::guard('student')->user()->name}}!   Go back Home.
                         
                     </div>
                       

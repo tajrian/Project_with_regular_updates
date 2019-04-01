@@ -71,6 +71,14 @@
     Route::post("/projectSubmit","SubmitFormController@store");
     Route::get('/success','SubmitFormController@view');
 
+    Route::get('/about',function(){
+       return view('about');
+    });
+
+    Route::get('/contact',function(){
+       return view('contact');
+    });
+
 
     Route::post('/editStatus',function(Request $request ){
         $id=$request->id;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Search Result-teacher</title>
+  <title>Search Result-Student</title>
     <link rel="stylesheet" href="{{asset('anik/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
     <script src="{{asset('anik/js/bootstrap.js')}}"></script>
@@ -27,7 +27,7 @@
 
     <header class="main-header">
     <div>
-      <a href="colorlib-search-4/index.html"><img src="{{asset('anik/logo.svg')}}" alt="Logo here">
+      <a href="/"><img src="{{asset('anik/logo.svg')}}" alt="Logo here">
 
       
       <a href="/register/teacher"><button class="btn default" style="color: #fff;">Sign up Teacher</button></a>
@@ -41,7 +41,7 @@
      
 
   <!--navigation bar-->
-<div>
+        <div>
           <nav id="navbar" class="nav-mx border rounded mb-4">
             <ul>
               <li class="nav-item"><a href="/" class="rounded nav-link">Home</a></li>
@@ -54,6 +54,63 @@
           </nav>
         </div>
         <div class="clearfix"></div>
+
+        <div class="row">
+  <div class="col-lg-6 mt-4">
+    <div class="card bg-white" style="margin-top:20px;">
+      <div class="card-block">
+
+        <div class="card-text" style="padding-right: 20px;">
+          <div style="color:#000; padding-top: 5px; font-family:Comic Sans Ms,cursive,sans-serif;">
+
+             <h2 style="padding: 12px">Corporate Headquarters:</h2>
+
+             <h5  style="padding: 12px"style="padding: 12px">Address: 22 fake lane, CA</h5>
+             <h5 style="padding: 12px">Contact: 0173828332367</h5>
+             <h5 style="padding: 12px">Email: tbj@gmail.com</h5>
+
+             <h5 style="padding: 12px">CEO COntact: workwithtajri@gmail.com</h5>
+
+      
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+   
+  </div>
+
+
+
+  <div class="col-lg-6 mt-4">
+     <div class="card bg-white" style="margin-top: 20px" >
+       <div class="card-block">
+          <div style="color:#000; padding-top: 5px; font-family:Comic Sans Ms,cursive,sans-serif;">
+
+            
+            <div class="card-text">
+              
+              <h2 style="padding: 12px">General Contact:</h2>
+
+             <h5 style="padding: 12px">Address: 22 truth lane, CA</h5>
+             <h5 style="padding: 12px">Contact: 017382844344</h5>
+             <h5 style="padding: 12px">Email: anik43@gmail.com</h5>
+
+             <h5 style="padding: 12px">CEO COntact: workwithanik@gmail.com</h5>
+
+          </div>
+         
+       </div>
+
+      </div>
+     
+     </div>
+      
+  </div>
+
+</div>
+
 
 
 
@@ -156,46 +213,7 @@
 
 
 
-<div class="container">
-        
-        <table class="table table-striped table-bordered" >
-            
-            <thead style="color: #EEE;" >
-                <tr> 
-                    <td>Name</td>
-                    <td>Institute</td>
-                    <td>Dept</td>
-                    <td>full profile</td>
-                </tr>
-            </thead>
 
-           <tbody style="color: #EEE;">
-               @foreach($teacher as $teacher)
-               
-               @php
-               $id=$teacher->name
-               @endphp
-               <tr>
-                    <td>{{ $teacher->name }}</td>
-                    <td>{{ $teacher->institute }}</td>
-                    <td>{{ $teacher->dept }}</td>
-                    <td>
-                    <form action="/pdt" method="POST" role="search">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="project_id" id="project_id" value="<?php echo htmlspecialchars($id); ?>" />
-                    <button type="submit">Click Here</button>
-                    </form>
-                    </td>
-
-               </tr>
-               @endforeach
-            </tbody>
-          </table>
-</div>
-
-
-
-</div>
   
   
 </body>

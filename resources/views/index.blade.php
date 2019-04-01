@@ -13,10 +13,10 @@
   <body>
     <div class="menu">
     <ul>
-	<li><a href="/register/teacher" style="text-decoration:none;">Teacher Sign Up </a></li>
-  <li><a href="/register/student" style="text-decoration:none;">Student Sign Up </a></li>
-	<li><a href="/login/teacher" style="text-decoration:none;">Teacher Sign In</a></li>
-  <li><a href="/login/student" style="text-decoration:none;">Student Sign In</a></li>
+	<li><a href="/register/teacher" style="text-decoration:none;">New Teacher</a></li>
+  <li><a href="/register/student" style="text-decoration:none;">New Student</a></li>
+	<li><a href="/login/teacher" style="text-decoration:none;">Teacher Profile</a></li>
+  <li><a href="/login/student" style="text-decoration:none;">Student Profile</a></li>
 
 	<!--<li><a href="ContactFrom_v15/index.html" style="text-decoration:none;"></a></li>-->
 	</ul>
@@ -28,14 +28,14 @@
 
           <legend><img src="{{asset('home/logo.svg')}}"></legend>
             
-          <input type="text" class="form-control" name="q" placeholder="What are you looking for?">
+          <input type="text" class="form-control" name="q" placeholder="#student  #teacher  #project  #thesis" id="xd">
               <!--<input type="button" value="search" class="close-btn"> -->
-          <div class="suggestion-wrap">
-            <span>#teacher</span>
-            <span>#student</span>
-            <span>#project</span>
-            <span>#thesis</span>
-          </div> 
+          <datalist id="xd">
+                    <option>laravel</option>
+                    <option>django</option>
+                    <option>.NET</option>
+                    <option>Spring</option>
+          </datalist>
       </form>
     </div>
     
