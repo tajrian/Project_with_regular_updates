@@ -159,7 +159,8 @@
         //dd($id);
         //$hq=1;
         $project=\DB::table('Projects')
-                   ->where('advisor','LIKE','%'.$s.'%')
+                   ->where([['advisor','LIKE','%'.$s.'%'],['is_accepted','LIKE','%Yes%'],])
+
                    ->get();
         //dd($project);
         return view('publicTeacherProfile',compact('teacher','project'));

@@ -174,7 +174,7 @@
 
             <tr>
                 <td>Student</td>
-                <td> pore kortesi</td>
+                <td>{{ $project->student_id }}</td>
             </tr>
 
             <tr>
@@ -209,12 +209,7 @@
 
             <tr>
                 <td>Idea status</td>
-                @php
-                $r=$project->is_accepted;
-                if($r==1)$eka="YES";
-                else $eka="NO";
-                @endphp
-                <td>{{ $eka }}</td>
+                <td>{{ $project->is_accepted }}</td>
             </tr>
 
             
@@ -236,12 +231,7 @@
             
             <tr>
                 <td>Is published</td>
-                @php
-                $r=$project->is_published;
-                if($r==1)$eka="YES";
-                else $eka="NO";
-                @endphp
-                <td>{{ $eka }}</td>
+                <td>{{ $project->is_published }}</td>
             </tr>
 
 
