@@ -16,7 +16,15 @@
                    ->first();
         //dd($project);
 
-        return view('editProject',compact('project')); 
+        $id=$project->student_id;
+
+        $student=\DB::table('Students')
+                   ->where('id','=',$id)
+                   ->first();
+
+        $sname=$student->name;
+
+        return view('editProject',compact('project','sname')); 
     });
 
 
@@ -121,7 +129,14 @@
                    ->where('title','LIKE','%'.$q.'%')
                    ->first();
         //dd($project);
-        return view('publicProjectDetails',compact('project')); 
+                   $id=$project->student_id;
+
+        $student=\DB::table('Students')
+                   ->where('id','=',$id)
+                   ->first();
+
+        $sname=$student->name;
+        return view('publicProjectDetails',compact('project','sname')); 
     });
 
     Route::any('/pdprivate',function(){
@@ -132,7 +147,15 @@
                    ->first();
         //dd($project);
 
-        return view('project',compact('project')); 
+        $id=$project->student_id;
+
+        $student=\DB::table('Students')
+                   ->where('id','=',$id)
+                   ->first();
+
+        $sname=$student->name;
+
+        return view('project',compact('project','sname')); 
     });
 
     Route::any('/pdprivatestudent',function(){
@@ -142,8 +165,16 @@
                    ->where('title','LIKE','%'.$q.'%')
                    ->first();
         //dd($project);
+        $id=$project->student_id;
 
-        return view('projectStudent',compact('project')); 
+        $student=\DB::table('Students')
+                   ->where('id','=',$id)
+                   ->first();
+
+        $sname=$student->name;
+
+
+        return view('projectStudent',compact('project','sname')); 
     });
 
 

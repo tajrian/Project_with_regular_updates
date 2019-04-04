@@ -174,7 +174,7 @@
 
             <tr>
                 <td>Student</td>
-                <td>{{ $project->student_id }}</td>
+                <td>{{ $sname }}</td>
             </tr>
 
             <tr>

@@ -36,7 +36,7 @@
 
             <tr>
                 <td>Student</td>
-                <td> pore kortesi</td>
+                <td>{{ $sname }}</td>
             </tr>
 
             <tr>
