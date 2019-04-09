@@ -15,7 +15,7 @@ html {
  */
 body {
   margin: 0;
-  background: url("../images/Searchs_0048.jpg");
+  background: url("../images/bg-012.jpg");
 }
 
 ul {
@@ -991,8 +991,8 @@ legend {
 
 
 
-.s004 form .suggestion-wrap span {
-  font-size: 14px;
+.s004 form .suggestion-wrap span{
+  font-size: 20px;
   font-family: 'Helvetica', sans-serif;
   display: inline-block;
   padding: 0 15px;
@@ -1002,6 +1002,10 @@ legend {
   border-radius: 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.s004 form .suggestion-wrap span:hover {
+    color: red;
 }
 
 .s004 input[type=text]{

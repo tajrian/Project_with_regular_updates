@@ -47,8 +47,8 @@
               <li class="nav-item"><a href="/" class="rounded nav-link">Home</a></li>
               <li class="nav-item"><a href="/" class="rounded nav-link">Profile</a></li>
               <li class="nav-item"><a href="/about" class="rounded nav-link">About</a></li>
-              <li class="nav-item"><a href="/" class="rounded nav-link">Projects</a></li>
-              <li class="nav-item"><a href="/" class="rounded nav-link">Settings</a></li>
+              <li class="nav-item"><a href="/allproject" class="rounded nav-link">Projects</a></li>
+              <li class="nav-item"><a href="/" class="rounded nav-link">Search</a></li>
               <li class="nav-item"><a href="/contact" class="rounded nav-link">Contact Us</a></li>
             </ul>
           </nav>

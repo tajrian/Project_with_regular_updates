@@ -49,8 +49,8 @@
               <li class="nav-item"><a href="/" class="rounded nav-link">Home</a></li>
               <li class="nav-item"><a href="/" class="rounded nav-link">Profile</a></li>
               <li class="nav-item"><a href="/about" class="rounded nav-link">About</a></li>
-              <li class="nav-item"><a href="/" class="rounded nav-link">Projects</a></li>
-              <li class="nav-item"><a href="/" class="rounded nav-link">Settings</a></li>
+              <li class="nav-item"><a href="/allproject" class="rounded nav-link">Projects</a></li>
+              <li class="nav-item"><a href="/" class="rounded nav-link">Search</a></li>
               <li class="nav-item"><a href="/contact" class="rounded nav-link">Contact Us</a></li>
             </ul>
           </nav>
@@ -65,97 +65,7 @@
 
 
 
-  <!--sidebar goes here-->
-
- <!-- <section class="main">
-    <div class="container">
-      <h1>tourist</h1>
-      <h2>Personal Info</h2>
-      <ul>
-        <h4><li>Full Name: Gennady</li></h4>
-        <h4><li>Age: 24</li></h4>
-      </ul>
-      <h2>Education</h2>
-      <ul>
-        <h4><li>University: SEC</li></h4>
-        <h4><li>Department: CSE</li></h4>
-        <h4><li>Semester: Fall</li></h4>
-        <h4><li>Session: 2015-16</li></h4>
-      </ul>
-      <h2>Contact Info</h2>
-      <ul>
-        <h4><li>E-mail: <a href="anik.3290@gmail.com"></a></li></h4>
-        <h4><li>Phone: 01858337417</li></h4>
-      </ul>
-      <h2>Skills</h2>
-      <h4><li>Programming</li></h4>
-      <h4><li>Web Developing</li></h4>
-      <h4><li>Management</li></h4>
-
-
-    </div>
-  </section>
-
-  <div class="sidebar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
--->
-
-<!--
-<div class="row">
-  <div class="col-lg-12">
-    <div class="card bg-white" style="margin-top:20px">
-      <div class="card-block">
-
-        <div class="card-text" style="padding-right: 20px">
-          <div style="color:#000; padding-top: 5px; font-family:Comic Sans Ms,cursive,sans-serif;">
-
-            <h3 style="padding: 12px; margin-left:8px;">Search-Results:<span style="color: #FF0000;"> students</span></h3>
-
-              <div class="ridge" style="border-style: ridge; margin-left: 17px; padding-bottom: 10px; border-radius: 10px;">
-                
-                  <h2 style="padding: 12px;">tourist</h2>
-                  <h6 style="padding-left: 15px; margin-top: -13px;">2 complited project</h6>
-                  <a href="index.html"><button class="btn default" style="color: #21618C; float: right; margin-top: -55px; margin-right: 5px;">Visit Profile</button></a>
-               </div>
- 
-               <div class="ridge" style="border-style: ridge; margin-top:20px; margin-left:17px; padding-bottom: 10px; border-radius: 10px;">
-                  <h2 style="padding: 12px;">tajrian</h2>
-                  <h6 style="padding-left: 15px; margin-top: -13px;">1 complited project</h6>
-                 <a href="index.html"> <button class="btn default" style="color: #21618C; float: right; margin-top: -55px; margin-right: 5px;">Visit Profile</button></a>
-                </div>
-
-
-                <div class="ridge mb-4" style="border-style: ridge; margin-top:20px; margin-left:17px; padding-bottom: 10px; border-radius: 10px;">
-
-                    <h2 style="padding: 12px;">tilottoma</h2>
-                    <h6 style="padding-left: 15px; margin-top: -13px;">4 complited project</h6>
-                   <a href="index.html"> <button class="btn default" style="color: #21618C; float: right; margin-top: -55px; margin-right: 5px;">Visit Profile</button></a>
-                </div>
-
-
-                <div class="clearfix"></div>
-
-             </div>
-
-           </div>
-        
-         </div>
-      
-       </div>
-   
-     </div>
-
-   </div>
-         
-
--->
-
+  
 
 
 
@@ -232,7 +142,7 @@
                   <form action="/pd" method="POST" role="search">
                   {{ csrf_field() }}
                   <input type="hidden" name="project_id" id="project_id" value="<?php echo htmlspecialchars($id); ?>" />
-                  <button type="submit" class="btn btn-default">Click Here</button>
+                  <button type="submit" class="btn btn-default" style="background-color: pink;">Click Here</button>
                   </form>
                 </td>
 

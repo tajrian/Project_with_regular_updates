@@ -4,7 +4,10 @@
     use Illuminate\Http\Request;
 
     Route::view('/', 'index');
+    //Route::view('/jquary', 'jquary');
     Route::view('/publicsearch', 'search');
+
+   
 
 
     
@@ -220,6 +223,16 @@
 
     });
 
+     Route::get('/allproject', function(){
+
+      $project=\DB::table('Projects')
+                   ->get();
+      //dd($project);
+
+      return view('allProject',compact('project')); 
+
+    });
+
 
 
 
@@ -269,6 +282,27 @@
 
             //dd($project);
             return view('projectSearch',compact('project'));
+
+        }
+        else{
+          $project=\DB::table('Projects')
+                   ->where('title','LIKE','%'.$q.'%')
+                   ->orWhere('tags','LIKE','%'.$q.'%')
+                   ->get();
+
+            //dd($project);
+
+          $teacher=\DB::table('Teachers')
+                   ->where('name','LIKE','%'.$q.'%')
+                   ->get();
+
+          $student=\DB::table('Students')
+                   ->where('name','LIKE','%'.$q.'%')
+                   ->get();
+
+          
+
+          return view('uncategorized',compact('project','teacher','student'));
 
         }
     });
